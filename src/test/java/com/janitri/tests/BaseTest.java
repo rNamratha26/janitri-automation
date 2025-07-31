@@ -15,7 +15,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        // Setup ChromeDriver using WebDriverManager
+       
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
@@ -23,7 +23,7 @@ public class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        // Initialize WebDriverWait with a 10-second timeout
+ 
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Navigate to the target URL
