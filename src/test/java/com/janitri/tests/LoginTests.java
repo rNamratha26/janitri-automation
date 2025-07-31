@@ -32,7 +32,7 @@ public class LoginTests extends BaseTest {
     public void testInvalidLoginShowErrorMsg() {
         LoginPage loginPage = new LoginPage(driver);
 
-        // Use explicit wait to wait for username field before interacting
+        
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
 
@@ -40,7 +40,7 @@ public class LoginTests extends BaseTest {
         loginPage.enterPassword("invalid");
         loginPage.clickLogin();
 
-        // Wait explicitly for the error message to be visible
+       
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("errorMessage"))); // Replace with actual locator if different
 
         String errorMsg = loginPage.getErrorMessage();
