@@ -26,7 +26,7 @@ public class BaseTest {
  
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // Navigate to the target URL
+   
         driver.get("https://dev-dash.janitri.in/");
     }
 
