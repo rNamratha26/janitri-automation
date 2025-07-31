@@ -11,7 +11,7 @@ public class LoginPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    // Updated locators to match your HTML elements
+    
     private By userIdInput = By.id("formEmail");
     private By passwordInput = By.id("formPassword");
     private By loginButton = By.xpath("//button[contains(@class,'login-button')]");
